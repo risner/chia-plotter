@@ -56,7 +56,7 @@ set(BLAKE3_SRC
     ${BLAKE3_PATH}/blake3_sse41_x86-64_windows_gnu.S
     ${BLAKE3_PATH}/blake3_sse2_x86-64_windows_gnu.S
 )
-ELSEIF(TARGET_ARCH STREQUAL "x86_64")
+ELSEIF(TARGET_ARCH STREQUAL "x86_64" OR TARGET_ARCH STREQUAL "amd64")
 set(BLAKE3_SRC
     ${BLAKE3_PATH}/blake3.c
     ${BLAKE3_PATH}/blake3_portable.c
